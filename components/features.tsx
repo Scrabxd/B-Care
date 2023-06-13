@@ -1,7 +1,8 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import {StatisticsChart1} from './statistics';
+import { StatisticsChart1 } from './statisticsBars';
+import { StatisticsChart2 } from './statisticsDoughnut'
 
 export default function Features() {
   
@@ -41,7 +42,7 @@ export default function Features() {
               <div className="md:pr-4 lg:pr-6 xl:pr-8 mb-8">
                 <div>
                   <h3 className="h3 mb-3">Most common types of cancer in 2020</h3>
-                  <StatisticsChart1 />
+                    <StatisticsChart1 />
                 </div>
               </div>
             </div>
@@ -50,7 +51,9 @@ export default function Features() {
               <div className="md:pr-4 lg:pr-6 xl:pr-8 mb-8">
                 <div>
                   <h3 className="h3 mb-3">People who were affected by cancer in 2018</h3>
-                  {/* <StatisticsChart2 /> */}
+                  <div className="flex justify-center">
+                    <StatisticsChart2 />
+                  </div>
                 </div>
               </div>
             </div>

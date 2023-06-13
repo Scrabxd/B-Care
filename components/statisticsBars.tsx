@@ -73,36 +73,3 @@ export const StatisticsChart1 = () => {
 
   return <canvas ref={chartRef} style={{ maxWidth: '510px', maxHeight: '220px', width: '100%', height: '100%' }}/>;
 };
-
-// export const StatisticsChart2 = () => {
-//   const chartRef = useRef(null);
-
-//   useEffect(() => {
-//     Chart.register(CategoryScale, LinearScale, ChartDataLabels, PieController);
-
-//     const ctx = chartRef.current.getContext('2d');
-//     const chart = new Chart(ctx, {
-//       type: 'pie',
-//       data: {
-//         labels: ['People without cancer', 'People with cancer'],
-//         datasets: [
-//           {
-//             data: [8000000000 - 13100000, 13100000],
-//             backgroundColor: ['#34A5AB', '#E53E3E'],
-//           },
-//         ],
-//       },
-//       options: {
-//         responsive: true,
-//         maintainAspectRatio: false,
-//       },
-//     });
-
-//     return () => {
-//       chart.destroy();
-//     };
-//   },
-//   );
-
-//   return <canvas ref={chartRef} style={{ maxWidth: '510px', maxHeight: '220px', width: '100%', height: '100%' }}/>;
-// };
