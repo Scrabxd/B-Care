@@ -14,11 +14,18 @@ const data = {
         'rgba(52, 165, 171, 1)',
         'rgba(144, 236, 255, 1)',
       ]  
-  }]
+  }],
 }
 
 const options = {
-
+  plugins:{
+    leyend: {
+      display: false,
+    },
+    tooltip: {
+      enabled: false,
+    }
+  }
 }
 
 const textCenter = {

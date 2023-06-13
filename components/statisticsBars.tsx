@@ -71,5 +71,5 @@ export const StatisticsChart1 = () => {
     };
   }, []);
 
-  return <canvas ref={chartRef} style={{ maxWidth: '510px', maxHeight: '220px', width: '100%', height: '100%' }}/>;
+  return <canvas ref={chartRef} style={{ maxWidth: '470px', maxHeight: '220px', width: '100%', height: '100%' }}/>;
 };

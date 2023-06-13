@@ -39,8 +39,8 @@ export default function Features() {
 
             {/* Content Left */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6 text-center" data-aos="fade-right">
-              <div className="md:pr-4 lg:pr-6 xl:pr-8 mb-8">
-                <div>
+              <div className="md:pr-4 lg:px-2 xl:px-2 mb-8">
+                <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
                   <h3 className="h3 mb-3">Most common types of cancer in 2020</h3>
                     <StatisticsChart1 />
                 </div>
@@ -48,8 +48,8 @@ export default function Features() {
             </div>
             {/* Content Right */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6 text-center" data-aos="fade-left">
-              <div className="md:pr-4 lg:pr-6 xl:pr-8 mb-8">
-                <div>
+              <div className="md:pr-4 lg:px-2 xl:px-2 mb-8">
+                <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
                   <h3 className="h3 mb-3">People who were affected by cancer in 2018</h3>
                   <div className="flex justify-center">
                     <StatisticsChart2 />
