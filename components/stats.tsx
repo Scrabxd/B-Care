@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import { StatisticsChart1 } from './statisticsBars';
 import { StatisticsChart2 } from './statisticsDoughnut'
 
-export default function Features() {
+export default function Stats() {
   
   const [tab, setTab] = useState<number>(1)
 
@@ -19,7 +19,7 @@ export default function Features() {
   }, []) 
 
   return (
-    <section className="relative">
+    <section id='stats' className="relative">
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>

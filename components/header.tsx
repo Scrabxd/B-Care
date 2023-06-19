@@ -1,9 +1,9 @@
 import VideoThumb from '@/public/images/logo-animation.gif'
 import ModalVideo from '@/components/modal-video'
 
-export default function Hero() {
+export default function Header() {
   return (
-    <section className="relative">
+    <section id='header' className="relative">
 
       {/* Illustration behind hero content */}
       <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -z-1" aria-hidden="true">
