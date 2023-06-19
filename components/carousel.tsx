@@ -16,16 +16,16 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ asset, title, subtitle, content }) => (
   <div className='card-carousel rounded shadow-xl max-w-auto grid gap-0 md:grid-cols-5'>
-    <div className='col-span-2 p-6 grid gap-0 md:grid-cols-2' style={{backgroundImage: 'linear-gradient(135deg, #6DFFD6, #34A5AB)' }}>
+    <div className='col-coarousel-l col-span-2 p-6 grid gap-0 md:grid-cols-2' style={{backgroundImage: 'linear-gradient(135deg, #6DFFD6, #34A5AB)' }}>
         <div className='col-span-2 h-auto'>
-            <div style={{ borderRadius: '50%', width: '128px', height: '128px', overflow: 'hidden' }} className='m-4'>
+            <div style={{ borderRadius: '50%', width: '128px', height: '128px', overflow: 'hidden' }} className='m-4 image-carousel'>
                 <Image style={{ width: '100%', height: '100%', objectFit: 'cover' }} src={asset} alt="Test" />
             </div>
             <h3 className="h3 mx-4">{title}</h3>
         </div>
         <h4 className="col-span-2 h4 mb-2 text-center">{subtitle}</h4>
     </div>
-    <div className='col-span-3 flex items-center p-6' style={{backgroundColor:"white"}}>
+    <div className='col-coarousel-r col-span-3 flex items-center p-6' style={{backgroundColor:"white"}}>
         <blockquote className="text-xl mb-4 text-gray-600">{content}</blockquote>
     </div>
   </div>
