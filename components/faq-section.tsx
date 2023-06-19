@@ -6,7 +6,7 @@ import AssetSignin from '@/public/images/asset-faq.jpg'
 export default function FAQ() {
 
   return (
-    <section className="relative">
+    <section id='FAQ' className="relative">
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>

@@ -4,7 +4,7 @@ import UseCarousel from './carousel-settings'
 
 export default function Testimonials() {
   return (
-    <section className="relative">
+    <section id='testimonials' className="relative">
 
       {/* Illustration behind content */}
       {/* <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -mb-32" aria-hidden="true">

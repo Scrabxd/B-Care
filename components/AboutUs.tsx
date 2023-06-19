@@ -1,9 +1,9 @@
 import assetTeam from '@/public/images/asset-teamwork.jpg'
 import Image from 'next/image'
 
-export default function FeaturesBlocks() {
+export default function AboutUs() {
   return (
-    <section className="relative">
+    <section id='AboutUs' className="relative">
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-100 pointer-events-none" aria-hidden="true"></div>
