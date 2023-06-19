@@ -3,7 +3,7 @@ $color-pink: #EC4899;
 $color-gray: #9CA3AF;
 $color-black: #1F2937;
 $card-height: 23rem;
-$card-width: 46rem;
+$card-width: 768px;
 
 
 .carousel {
@@ -33,10 +33,25 @@ $card-width: 46rem;
   background-color: hsl(280deg, 40%, calc(100% - var(--abs-offset) * 50%));
   text-align: justify;
   transition: all 0.3s ease-out;
+  border-radius: 10%;
   
   Image, h3, h4, blockquote {
     transition: all 0.3s ease-out;
     opacity: var(--active);
+  }
+
+  .col-coarousel-l {
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+
+    .image-carousel {
+      border-color: #34A5AB;
+    }
+  }
+
+  .col-coarousel-r {
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
   }
 
   h3, h4 {
