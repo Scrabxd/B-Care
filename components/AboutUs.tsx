@@ -1,7 +1,7 @@
 import assetTeam from '@/public/images/asset-teamwork.jpg'
 import Image from 'next/image'
 
-export default function FeaturesBlocks() {
+export default function AboutUs() {
   return (
     <section className="relative">
 

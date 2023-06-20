@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import { StatisticsChart1 } from './statisticsBars';
 import { StatisticsChart2 } from './statisticsDoughnut'
 
-export default function Features() {
+export default function Stats() {
   
   const [tab, setTab] = useState<number>(1)
 

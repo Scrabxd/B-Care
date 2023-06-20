@@ -1,7 +1,7 @@
 import VideoThumb from '@/public/images/logo-animation.gif'
 import ModalVideo from '@/components/modal-video'
 
-export default function Hero() {
+export default function Header() {
   return (
     <section className="relative">
 

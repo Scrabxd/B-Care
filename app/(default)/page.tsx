@@ -3,32 +3,24 @@ export const metadata = {
   description: 'B- CARE landing page',
 }
 
-import Hero from '@/components/hero'
-import Features from '@/components/features'
-import FeaturesBlocks from '@/components/features-blocks'
+import Header from '@/components/header'
+import Stats from '@/components/stats'
+import AboutUs from '@/components/AboutUs'
 import Testimonials from '@/components/testimonials'
-<<<<<<< Updated upstream
-import Newsletter from '@/components/newsletter'
-=======
-import Roadmap from '@/components/roadmap'
->>>>>>> Stashed changes
 import FAQ from '@/components/faq-section'
 import TeamSection from '@/components/team-section'
+import Roadmap from '@/components/roadmap'
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Features />
-      <FeaturesBlocks />
+      <Header />
+      <Stats />
+      <AboutUs />
       <Testimonials />
       <Roadmap />
       <TeamSection />
-<<<<<<< Updated upstream
-      <Newsletter />
-=======
       <FAQ />
->>>>>>> Stashed changes
     </>
   )
 }
