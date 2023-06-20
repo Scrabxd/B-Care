@@ -9,6 +9,7 @@ import AboutUs from '@/components/AboutUs'
 import Testimonials from '@/components/testimonials'
 import FAQ from '@/components/faq-section'
 import TeamSection from '@/components/team-section'
+import Roadmap from '@/components/roadmap'
 
 export default function Home() {
   return (
@@ -17,8 +18,9 @@ export default function Home() {
       <Stats />
       <AboutUs />
       <Testimonials />
-      <FAQ />
+      <Roadmap />
       <TeamSection />
+      <FAQ />
     </>
   )
 }
