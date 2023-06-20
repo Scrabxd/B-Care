@@ -1,2 +1,2 @@
 # B-CARE
-[B-CARE][/public/images/logo.svg]
+[B-CARE](/public/images/logo.svg)
