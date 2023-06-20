@@ -5,7 +5,6 @@ import React, { useState, useEffect } from 'react';
 import { TiChevronLeftOutline, TiChevronRightOutline } from 'react-icons/ti';
 import Image, { StaticImageData } from 'next/image';
 
-const MAX_VISIBILITY = 3;
 const AUTOMATIC_INTERVAL = 5000;
 
 interface CardProps {
@@ -66,14 +65,10 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
             '--offset': (active - i) / 3,
             '--direction': Math.sign(active - i),
             '--abs-offset': Math.abs(active - i) / 3,
-            'pointer-events': active === i ? 'auto' : 'none',
-            opacity:
-              Math.abs(active - i) >= MAX_VISIBILITY ? '0' : '1',
-            display:
-              Math.abs(active - i) > MAX_VISIBILITY
-                ? 'none'
-                : 'block',
-          }}
+            '--pointer-events': active === i ? 'auto' : 'none',
+            opacity: Math.abs(active - i) >= 3 ? '0' : '1',
+            display: Math.abs(active - i) > 3 ? 'none' : 'block',
+          } as React.CSSProperties}
         >
           {child}
         </div>
