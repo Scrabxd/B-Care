@@ -1,2 +1,2 @@
 # B-CARE
-! [B-CARE](/public/images/logo-animation.gif)
+! [B-CARE](logo-animation.gif)
