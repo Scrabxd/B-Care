@@ -13,17 +13,23 @@ export default function FAQ() {
       <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-6 md:pt-10">
+        <div className="py-6 md:py-10">
+
+          {/* Section header */}
+          <div className="max-w-xl mx-28 text-start pb-4 md:pb-6">
+            <h2 className="h2 mb-2">FAQ</h2>
+            <p className="text-xl text-gray-600 pr-72">Answers to Your Most Commonly Asked Questions</p>
+          </div>
 
           {/* Section content */}
           <div className="md:grid md:grid-cols-12 md:gap-6">
 
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
-              <div className="mb-6 pr-36">
+              {/* <div className="mb-6 pr-36">
                 <h3 className="h3 mb-3">FAQ</h3>
                 <p className="text-xl text-gray-600 pr-24">Answers to Your Most Commonly Asked Questions</p>
-              </div>
+              </div> */}
               {/* Tabs */}
               <div className="mb-8 md:mb-0">
                 <div className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 bg-white shadow-md border-gray-200 hover:shadow-lg`}>
@@ -85,8 +91,8 @@ export default function FAQ() {
             </div>
 
             {/* Tabs items */}
-            <div className="md:col-span-6 relative flex flex-col gap-6 pb-3 pt-24" data-aos="zoom-y-out">
-                <div className="h-full w-full relative inline-flex flex-col bg-white rounded shadow-md mt-16">
+            <div className="md:col-span-6 relative flex flex-col gap-6 pb-3 md:mt-6" data-aos="zoom-y-out">
+                <div className="h-full w-full relative inline-flex flex-col bg-white rounded shadow-md">
                     <Image layout="fill" objectFit="cover" className="rounded" src={AssetSignin} alt="Features bg" />
                 </div>
             </div>

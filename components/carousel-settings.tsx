@@ -21,24 +21,6 @@ const UseCarousel: React.FC = () => {
       subtitle: 'Vet',
       content: 'Lorem ipsum dolor sit amet...',
     },
-    {
-      asset: Image1,
-      title: 'Card 4',
-      subtitle: 'Dogtor',
-      content: 'Lorem ipsum dolor sit amet...',
-    },
-    {
-      asset: Image1,
-      title: 'Card 5',
-      subtitle: 'Vet',
-      content: 'Lorem ipsum dolor sit amet...',
-    },
-    {
-      asset: Image1,
-      title: 'Card 6',
-      subtitle: 'Dogtor',
-      content: 'Lorem ipsum dolor sit amet...',
-    },
     // Add more cards here
   ];
 
