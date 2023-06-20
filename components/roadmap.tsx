@@ -13,12 +13,12 @@ export default function Roadmap() {
           <div className="py-6 md:py-10">
   
             {/* Section header */}
-            <div className="max-w-3xl mx-auto text-center pb-6 md:pb-10">
+            <div className="max-w-3xl mx-auto text-center pb-6 md:pb-10" data-aos="zoom-y-out">
               <h2 className="h2 mb-2"><span className="bg-clip-text text-transparent bg-gradient-to-b from-[#552CB3] to-[#6DFFD6]">B-CARE</span> Roadmap</h2>
             </div>
   
             {/* Items */}
-            <div className="timeline">
+            <div className="timeline" data-aos="zoom-y-out">
               <div className="timeline-step">
                 <div className="timeline-icon border-q0 mb-14">
                   <svg className="svg-q0" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 48 64" style={{transform: "rotate(-45deg)"}}>
