@@ -1,10 +1,10 @@
 import { Card} from './team';
-import Team_Luis from '../public/images/asset-team-luis.jpg'
-import Team_Arturo from '../public/images/asset-team-arturo.jpg'
-import Team_Esteban from '../public/images/asset-team-esteban.jpg'
-import Team_Danna from '../public/images/asset-team-danna.jpeg'
-import Team_Paul from '../public/images/asset-team-paul.jpeg'
-import Team_Sebastian from '../public/images/asset-team-sebastian.jpg'
+import Team_Luis from '@/public/images/asset-team-luis.jpg'
+import Team_Arturo from '@/public/images/asset-team-arturo.jpg'
+import Team_Esteban from '@/public/images/asset-team-esteban.jpg'
+import Team_Danna from '@/public/images/asset-team-danna.jpeg'
+import Team_Paul from '@/public/images/asset-team-paul.jpeg'
+import Team_Sebastian from '@/public/images/asset-team-sebastian.jpg'
 
 const UseTeamCard: React.FC = () => {
   const cards = [
