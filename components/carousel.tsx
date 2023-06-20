@@ -1,11 +1,12 @@
 'use client'
 
 import './carousel.scss'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { TiChevronLeftOutline, TiChevronRightOutline } from 'react-icons/ti';
 import Image, { StaticImageData } from 'next/image';
 
 const MAX_VISIBILITY = 3;
+const AUTOMATIC_INTERVAL = 5000;
 
 interface CardProps {
   asset: StaticImageData;
@@ -16,17 +17,17 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ asset, title, subtitle, content }) => (
   <div className='card-carousel rounded shadow-xl max-w-auto grid gap-0 md:grid-cols-5'>
-    <div className='col-coarousel-l col-span-2 p-6 grid gap-0 md:grid-cols-2' style={{backgroundImage: 'linear-gradient(135deg, #6DFFD6, #34A5AB)' }}>
-        <div className='col-span-2 h-auto'>
-            <div style={{ borderRadius: '50%', width: '128px', height: '128px', overflow: 'hidden' }} className='m-4 image-carousel'>
-                <Image style={{ width: '100%', height: '100%', objectFit: 'cover' }} src={asset} alt="Test" />
-            </div>
-            <h3 className="h3 mx-4">{title}</h3>
+    <div className='col-coarousel-l col-span-2 p-6 grid gap-0 md:grid-cols-2' style={{backgroundImage: 'radial-gradient(#90ECFF, #34A5AB)' }}>
+      <div className='col-span-2 h-auto relative flex flex-col items-center justify-center'>
+        <div style={{ borderRadius: '50%', width: '128px', height: '128px', overflow: 'hidden' }} className='m-4 image-carousel'>
+          <Image style={{ width: '100%', height: '120%', objectFit: 'cover'}} src={asset} alt="Test" />
         </div>
-        <h4 className="col-span-2 h4 mb-2 text-center">{subtitle}</h4>
+        <h3 className="h4 mx-3">{title}</h3>
+        <h4 className="col-span-2 h5 mb-2 text-center">{subtitle}</h4>
+      </div>
     </div>
     <div className='col-coarousel-r col-span-3 flex items-center p-6' style={{backgroundColor:"white"}}>
-        <blockquote className="text-xl mb-4 text-gray-600">{content}</blockquote>
+        <blockquote className="text-xl mb-4 italic text-gray-600">{content}</blockquote>
     </div>
   </div>
 );
@@ -39,11 +40,19 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
   const [active, setActive] = useState(1);
   const count = React.Children.count(children);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActive((prevActive) => (prevActive < count - 1 ? prevActive + 1 : 0));
+    }, AUTOMATIC_INTERVAL);
+
+    return () => clearInterval(interval);
+  }, [count]);
+
   return (
     <div className='carousel'>
       {active > 0 && (
         <button
-          className='nav-carousel left text-gray-400'
+          className='nav-carousel left text-gray-400 hover:text-gray-800'
           onClick={() => setActive((i) => i - 1)}
         >
           <TiChevronLeftOutline />
@@ -71,7 +80,7 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
       ))}
       {active < count - 1 && (
         <button
-          className='nav-carousel right text-gray-400'
+          className='nav-carousel right text-gray-400 hover:text-gray-800'
           onClick={() => setActive((i) => i + 1)}
         >
           <TiChevronRightOutline />
