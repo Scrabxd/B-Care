@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import AssetSignin from '@/public/images/asset-faq.jpg'
+import AssetSignin from '@/public/images/FAQ.jpeg'
 
 export default function FAQ() {
 
@@ -28,8 +28,8 @@ export default function FAQ() {
               <div className="mb-8 md:mb-0">
                 <div className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 bg-white shadow-md border-gray-200 hover:shadow-lg`}>
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">How does the NFT-based tracking work?</div>
-                    <div className="text-gray-600">In B-care we securely record and store patient data using blockchain technology, assigning a unique NFT to each patient to represent their medical journey.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">How does the blockchain tracking work?</div>
+                    <div className="text-gray-600">In B-care we securely record and store patient data using blockchain technology, assigning a unique contract to represent each process of treatment in their sickness.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">

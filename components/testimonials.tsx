@@ -24,13 +24,12 @@ export default function Testimonials() {
       </div> */}
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20">
+        <div className="py-6 md:py-10">
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-3 md:pb-4">
             <h2 className="h2 mb-4">Testimonials</h2>
-            <p className="text-xl text-gray-600" data-aos="zoom-y-out">Arcu cursus vitae congue mauris rhoncus viverra nibh cras pulvinar mattis
-              blandit libero cursus mattis.</p>
+
           </div>
 
           {/* Testimonials */}

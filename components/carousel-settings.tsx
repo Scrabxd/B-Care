@@ -1,44 +1,22 @@
 import { Carousel, Card} from './carousel';
-import Image1 from '@/public/images/asset-profile-test.jpg'
+import Vega from '@/public/images/Vega.jpeg'
+import Barrios from '@/public/images/Barrios.jpeg'
 
 const UseCarousel: React.FC = () => {
   const cards = [
     {
-      asset: Image1,
-      title: 'Card 1',
-      subtitle: 'Vet',
-      content: 'Lorem ipsum dolor sit amet...',
+      asset:  Barrios,
+      title: 'Lizeth Barrios',
+      subtitle: 'Medical Oncologist',
+      content: '"I find really useful to bring the cancer patients their medical information and progress in one single place."',
     },
     {
-      asset: Image1,
-      title: 'Card 2',
-      subtitle: 'Dogtor',
-      content: 'Lorem ipsum dolor sit amet...',
+      asset: Vega,
+      title: 'Valeria Vega',
+      subtitle: 'Nuring Assistant',
+      content: `"I think that this application would ease the tracking when dealing with patients since a lot of times it's difficult to give continuity to their progression "`,
     },
-    {
-      asset: Image1,
-      title: 'Card 3',
-      subtitle: 'Vet',
-      content: 'Lorem ipsum dolor sit amet...',
-    },
-    {
-      asset: Image1,
-      title: 'Card 4',
-      subtitle: 'Dogtor',
-      content: 'Lorem ipsum dolor sit amet...',
-    },
-    {
-      asset: Image1,
-      title: 'Card 5',
-      subtitle: 'Vet',
-      content: 'Lorem ipsum dolor sit amet...',
-    },
-    {
-      asset: Image1,
-      title: 'Card 6',
-      subtitle: 'Dogtor',
-      content: 'Lorem ipsum dolor sit amet...',
-    },
+
     // Add more cards here
   ];
 
