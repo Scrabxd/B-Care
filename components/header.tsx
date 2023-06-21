@@ -1,4 +1,4 @@
-import VideoThumb from '@/public/images/logo-animation.gif'
+import VideoThumb from '@/public/images/logoAnimation.gif'
 import ModalVideo from '@/components/modal-video'
 
 export default function Header() {
