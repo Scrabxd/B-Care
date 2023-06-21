@@ -6,6 +6,7 @@ import Team_Danna from '@/public/images/assetTeamDanna.jpeg';
 import Team_Paul from '@/public/images/assetTeamPaul.jpeg';
 import Team_Sebastian from '@/public/images/assetTeamSebastian.jpg';
 
+
 const UseTeamCard: React.FC = () => {
   const cards = [
     {
