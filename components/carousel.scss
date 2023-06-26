@@ -12,6 +12,10 @@ $card-width: 768px;
   height: $card-height;
   perspective: 500px;
   transform-style: preserve-3d;
+
+  @media (max-width: 768px) {
+    width: 360px;
+  }
 }
 
 .card-carousel-container {

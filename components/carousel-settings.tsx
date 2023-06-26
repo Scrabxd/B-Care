@@ -13,7 +13,7 @@ const UseCarousel: React.FC = () => {
     {
       asset: Vega,
       title: 'Valeria Vega',
-      subtitle: 'Nuring Assistant',
+      subtitle: 'Nursing Assistant',
       content: `"I think that this application would ease the tracking when dealing with patients since a lot of times it's difficult to give continuity to their progression "`,
     },
 

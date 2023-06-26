@@ -35,10 +35,10 @@ export default function Footer() {
                 <a href="#testimonials" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Testimonials</a>
               </li>
               <li className="mb-2">
-                <a href="#FAQ" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">FAQs</a>
+                <a href="#team-section" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Meet the team</a>
               </li>
               <li className="mb-2">
-                <a href="#team-section" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Meet the team</a>
+                <a href="#FAQ" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">FAQs</a>
               </li>
             </ul>
           </div>
