@@ -30,7 +30,7 @@ const options = {
 
 const textCenter = {
   id: 'textCenter',
-  beforeDatasetsDraw(chart, args, pluginOptions){
+  beforeDatasetsDraw(chart : any, args : any, pluginOptions : any){
     const { ctx, data } = chart;
     const lines = [`${data.datasets[0].data[1]}`,`MILLION PEOPLE`];
     const lineHeight = 20

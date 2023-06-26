@@ -1,9 +1,9 @@
-import assetTeam from '@/public/images/asset-teamwork.jpg'
+import assetTeam from '@/public/images/Oncologist.jpeg'
 import Image from 'next/image'
 
 export default function AboutUs() {
   return (
-    <section className="relative">
+    <section id='AboutUs' className="relative">
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-100 pointer-events-none" aria-hidden="true"></div>
@@ -32,7 +32,7 @@ export default function AboutUs() {
                   </g>
                 </svg>
                 <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Mision</h4>
-                <p className="text-gray-600 text-start">We aim to revolutionize cancer patient care with an innovative NFT-based system that tracks and documents their progress.</p>
+                <p className="text-gray-600 text-start">We aim to revolutionize cancer patient care with an innovative blockchain system that tracks and documents their progress.</p>
               </div>
 
               {/* 2nd item */}
@@ -46,7 +46,7 @@ export default function AboutUs() {
                   </g>
                 </svg>
                 <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Vision</h4>
-                <p className="text-gray-600 text-start">In B-care, we envision a world where patient data is secure, accessible, and fuels treatment decisions, progress monitoring, and cancer research advancements.</p>
+                <p className="text-gray-600 text-start">In B-care, we envision a world where patient data is secure, accessible, and fuels treatment recomendations for patients to have a better process.</p>
               </div>
 
               {/* 3rd item */}

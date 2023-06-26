@@ -5,7 +5,6 @@ import React, { useState, useEffect } from 'react';
 import { TiChevronLeftOutline, TiChevronRightOutline } from 'react-icons/ti';
 import Image, { StaticImageData } from 'next/image';
 
-const MAX_VISIBILITY = 3;
 const AUTOMATIC_INTERVAL = 5000;
 
 interface CardProps {
@@ -20,14 +19,14 @@ const Card: React.FC<CardProps> = ({ asset, title, subtitle, content }) => (
     <div className='col-coarousel-l col-span-2 p-6 grid gap-0 md:grid-cols-2' style={{backgroundImage: 'radial-gradient(#90ECFF, #34A5AB)' }}>
       <div className='col-span-2 h-auto relative flex flex-col items-center justify-center'>
         <div style={{ borderRadius: '50%', width: '128px', height: '128px', overflow: 'hidden' }} className='m-4 image-carousel'>
-          <Image style={{ width: '100%', height: '100%', objectFit: 'cover' }} src={asset} alt="Test" />
+          <Image style={{ width: '100%', height: '120%', objectFit: 'cover'}} src={asset} alt="Test" />
         </div>
-        <h3 className="h3 mx-4">{title}</h3>
-        <h4 className="col-span-2 h4 mb-2 text-center">{subtitle}</h4>
+        <h3 className="h4 mx-3">{title}</h3>
+        <h4 className="col-span-2 h5 mb-2 text-center">{subtitle}</h4>
       </div>
     </div>
     <div className='col-coarousel-r col-span-3 flex items-center p-6' style={{backgroundColor:"white"}}>
-        <blockquote className="text-xl mb-4 text-gray-600">{content}</blockquote>
+        <blockquote className="text-xl mb-4 italic text-gray-600">{content}</blockquote>
     </div>
   </div>
 );
@@ -66,14 +65,10 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
             '--offset': (active - i) / 3,
             '--direction': Math.sign(active - i),
             '--abs-offset': Math.abs(active - i) / 3,
-            'pointer-events': active === i ? 'auto' : 'none',
-            opacity:
-              Math.abs(active - i) >= MAX_VISIBILITY ? '0' : '1',
-            display:
-              Math.abs(active - i) > MAX_VISIBILITY
-                ? 'none'
-                : 'block',
-          }}
+            '--pointer-events': active === i ? 'auto' : 'none',
+            opacity: Math.abs(active - i) >= 3 ? '0' : '1',
+            display: Math.abs(active - i) > 3 ? 'none' : 'block',
+          } as React.CSSProperties}
         >
           {child}
         </div>
