@@ -15,11 +15,11 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ asset, title, subtitle, content }) => (
-  <div className='card-carousel rounded shadow-xl max-w-auto grid gap-0 md:grid-cols-5'>
-    <div className='col-coarousel-l col-span-2 p-6 grid gap-0 md:grid-cols-2' style={{backgroundImage: 'radial-gradient(#90ECFF, #34A5AB)' }}>
+  <div className='card-carousel rounded shadow-xl max-w-auto grid gap-0 grid-cols-5'>
+    <div className='col-coarousel-l col-span-2 p-6 grid gap-0 grid-cols-2' style={{backgroundImage: 'radial-gradient(#90ECFF, #34A5AB)' }}>
       <div className='col-span-2 h-auto relative flex flex-col items-center justify-center'>
         <div style={{ borderRadius: '50%', width: '128px', height: '128px', overflow: 'hidden' }} className='m-4 image-carousel'>
-          <Image style={{ width: '100%', height: '120%', objectFit: 'cover'}} src={asset} alt="Test" />
+          <Image style={{ width: '100%', height: '100%', objectFit: 'cover'}} src={asset} alt="Test" />
         </div>
         <h3 className="h4 mx-3">{title}</h3>
         <h4 className="col-span-2 h5 mb-2 text-center">{subtitle}</h4>
