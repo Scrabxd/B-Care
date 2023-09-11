@@ -31,7 +31,8 @@ export default function NavBar() {
           </div>
 
           {/* Desktop navigation */}
-          <nav className="hidden md:flex md:grow">
+          {/* <nav className="hidden md:flex md:grow"> */}
+          <nav className="hidden">
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
@@ -49,7 +50,7 @@ export default function NavBar() {
 
           </nav>
 
-          <MobileMenu />
+          {/* <MobileMenu /> */}
 
         </div>
       </div>
