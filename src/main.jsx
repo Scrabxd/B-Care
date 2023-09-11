@@ -15,11 +15,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <div className={`font-inter antialiased bg-white text-gray-900 tracking-tight`}>
       <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
-        <div className="grow">
-          <BrowserRouter>
-            <AppRouter />
-          </BrowserRouter>
-        </div>
+        <BrowserRouter>
+          <AppRouter />
+        </BrowserRouter>
       </div>
     </div>
   </React.StrictMode>,
