@@ -25,7 +25,7 @@ const Landing = () => {
 
   return (
     <>
-        <Loader loading={loading}/>
+        <Loader loading={loading} color='#34A5AB'/>
         <div className={` ${loading ? 'content' : 'content-loaded'}`}>
           <NavBar />
           <Header />

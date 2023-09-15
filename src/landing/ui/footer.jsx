@@ -54,7 +54,7 @@ export default function Footer() {
                 <div className="w-full">
                   <label className="block text-sm sr-only" htmlFor="newsletter">Email</label>
                   <div className="relative flex items-center max-w-xs">
-                    <input id="newsletter" type="email" className="w-full text-gray-800 px-3 py-2 pr-12 text-sm rounded border border-gray-300 active:border-[#7655C1]" placeholder="Your email" required />
+                    <input id="newsletter" type="email" className="w-full text-gray-800 px-3 py-2 pr-12 text-sm rounded border border-gray-300 focus:ring-[#7655C1]" placeholder="Your email" required />
                     <button type="submit" className="absolute inset-0 left-auto" aria-label="Subscribe">
                       <span className="absolute inset-0 right-auto w-px -ml-px my-2 bg-gray-300" aria-hidden="true"></span>
                       <svg className="w-3 h-3 fill-current text-[#7655C1] mx-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
