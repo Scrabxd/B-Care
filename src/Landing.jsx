@@ -20,12 +20,12 @@ const Landing = () => {
     // Simulate loading data or performing an API request
     setTimeout(() => {
       setLoading(false);
-    }, 2000); // Replace with actual data loading logic
+    }, 2150); // Replace with actual data loading logic
   }, []);
 
   return (
     <>
-        <Loader loading={loading} color='#34A5AB'/>
+        <Loader loading={loading}/>
         <div className={` ${loading ? 'content' : 'content-loaded'}`}>
           <NavBar />
           <Header />

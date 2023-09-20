@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
 
-import Dashboard from "./dashboard/index"
+import Dashboard from "./dashboardHos/sidebar"
 
 import Loader from './loader'
 import './css/additional-styles/content.css'
 
-const DashboardUser = () => {
+const DashboardMain = () => {
 
   const [loading, setLoading] = useState(true);
 
@@ -13,7 +13,7 @@ const DashboardUser = () => {
     // Simulate loading data or performing an API request
     setTimeout(() => {
       setLoading(false);
-    }, 2000); // Replace with actual data loading logic
+    }, 2150); // Replace with actual data loading logic
   }, []);
 
   return (
@@ -26,4 +26,4 @@ const DashboardUser = () => {
   )
 }
 
-export default DashboardUser
+export default DashboardMain

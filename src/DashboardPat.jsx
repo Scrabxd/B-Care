@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
 
-import Main from "./login/index"
+import Dashboard from "./dashboardPat/sidebar"
 
 import Loader from './loader'
 import './css/additional-styles/content.css'
 
-const Login = () => {
+const DashboardMain = () => {
 
   const [loading, setLoading] = useState(true);
 
@@ -20,10 +20,10 @@ const Login = () => {
     <>
       <Loader loading={loading}/>
       <div className={` ${loading ? 'content' : 'content-loaded'}`}>
-        <Main/>
+        <Dashboard/>
       </div>
     </>
   )
 }
 
-export default Login
+export default DashboardMain

@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 import ReactDOM from 'react-dom/client'
 // import './index.css'
 import AppRouter from './AppRouter'
+import Modal from 'react-modal'
 
 import './css/style.css'
 
@@ -10,6 +11,8 @@ import './css/style.css'
 // import './css/additional-styles/range-slider.css';
 // import './css/additional-styles/toggle-switch.css';
 import './css/additional-styles/theme.css';
+
+Modal.setAppElement('#root');
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

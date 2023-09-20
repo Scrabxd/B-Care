@@ -31,22 +31,24 @@ export default function NavBar() {
           </div>
 
           {/* Desktop navigation */}
-          {/* <nav className="hidden md:flex md:grow"> */}
-          <nav className="hidden">
+          <nav className="hidden md:flex md:grow">
+          {/* <nav className="hidden"> */}
             {/* Desktop sign in links */}
-            <ul className="flex grow justify-end flex-wrap items-center">
-              <li>
-                <Link to="/login" className="font-medium text-gray-600 hover:text-[#7655C1] px-4 py-2 flex items-center transition duration-150 ease-in-out">Sign in</Link>
-              </li>
-              <li>
-                <Link to="/" className="text-gray-100 bg-[#34A5AB] hover:bg-[#7655C1] ml-3 px-4 py-2 flex items-center transition duration-150 ease-in-ou rounded shadow font-medium leading-[1.375] border border-transparent">
-                  <span>Sign up</span>
-                  <svg className="w-3 h-3 fill-current text-gray-100 shrink-0 ml-2 -mr-1" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fillRule="nonzero" />
-                  </svg>
-                </Link>
-              </li>
-            </ul>
+            <Link to='/login' className="flex grow justify-end flex-wrap items-center">
+              <ul className="flex grow justify-end flex-wrap items-center">
+                <li>
+                  <button className="font-medium text-gray-600 hover:text-[#7655C1] px-4 py-2 flex items-center transition duration-150 ease-in-out">Login</button>
+                </li>
+                <li>
+                  <button className="text-gray-100 bg-[#34A5AB] hover:bg-[#7655C1] ml-3 px-4 py-2 flex items-center transition duration-150 ease-in-ou rounded shadow font-medium leading-[1.375] border border-transparent">
+                    <span>Sign up</span>
+                    <svg className="w-3 h-3 fill-current text-gray-100 shrink-0 ml-2 -mr-1" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fillRule="nonzero" />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </Link>
 
           </nav>
 

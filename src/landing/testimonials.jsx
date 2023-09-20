@@ -1,5 +1,4 @@
 // import Image from 'next/image'
-import TestimonialImage from '../assets/images/testimonial.jpg'
 import UseCarousel from './carousel-settings'
 
 export default function Testimonials() {

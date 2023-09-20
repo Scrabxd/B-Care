@@ -3,7 +3,7 @@
 }
 
 .body {
-  background: #f6f5f7;
+  background: rgb(251, 251, 251);
 	display: flex;
 	justify-content: center;
 	align-items: center;
