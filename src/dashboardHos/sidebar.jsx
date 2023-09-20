@@ -15,19 +15,19 @@ const Sidebar = () => {
     <div className="flex w-screen h-screen overflow-hidden">
       <div className="relative flex flex-col items-center h-auto w-auto bg-[#34A5AB] text-white px-2">
         <div className="flex h-full flex-col justify-center">
-          <Link  to="/dashdoc" className={`rounded-2xl w-auto py-2 px-2 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dashdoc' ? 'bg-[#6DFFD680]' : ''}`}>
+          <Link  to="/dash" className={`rounded-2xl w-auto py-2 px-2 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dash' ? 'bg-[#6DFFD680]' : ''}`}>
             <div className="flex justify-center items-center"><img src={logow} alt="bcare" className="w-auto h-10 select-none" /></div>
           </Link>
-          <Link to="/dashdoc/notifications" className={`pointer-events-none rounded-2xl w-auto py-4 px-4 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dashdoc/notifications' ? 'bg-[#6DFFD680]' : ''}`}>
+          <Link to="/dash/notifications" className={`rounded-2xl w-auto py-4 px-4 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dash/notifications' ? 'bg-[#6DFFD680]' : ''}`}>
             <div className="flex justify-center items-center"><IoNotificationsOutline size={24}/></div>
           </Link>
-          <Link to="/dashdoc/list" className={`pointer-events-none rounded-2xl w-auto py-4 px-4 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dashdoc/list' ? 'bg-[#6DFFD680]' : ''}`}>
+          <Link to="/dash/list" className={`rounded-2xl w-auto py-4 px-4 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dash/list' ? 'bg-[#6DFFD680]' : ''}`}>
             <div className="flex justify-center items-center"><IoPeopleOutline size={24}/></div>
           </Link>
-          <Link to="/dashdoc/calendar" className={`pointer-events-none rounded-2xl w-auto py-4 px-4 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dashdoc/calendar' ? 'bg-[#6DFFD680]' : ''}`}>
+          <Link to="/dash/calendar" className={`rounded-2xl w-auto py-4 px-4 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dash/calendar' ? 'bg-[#6DFFD680]' : ''}`}>
             <div className="flex justify-center items-center"><IoCalendarOutline size={24}/></div>
           </Link>
-          <Link to="/dashdoc/settings" className={`pointer-events-none rounded-2xl w-auto py-4 px-4 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dashdoc/settings' ? 'bg-[#6DFFD680]' : ''}`}>
+          <Link to="/dash/settings" className={`rounded-2xl w-auto py-4 px-4 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dash/settings' ? 'bg-[#6DFFD680]' : ''}`}>
             <div className="flex justify-center items-center"><IoSettingsOutline size={24}/></div>
           </Link>
         </div>
@@ -38,7 +38,7 @@ const Sidebar = () => {
         </div>
 
       </div>
-      <div className="w-full h-auto overflow-hidden">
+      <div className="w-full h-auto overflow-scroll">
         <Routes>
           <Route path="/" element={<MainDash />} />
           <Route path="/notifications" element={<FAQ />} />

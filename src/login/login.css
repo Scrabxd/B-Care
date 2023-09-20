@@ -77,9 +77,9 @@ button:focus {
 }
 
 .overlay {
-	background: #2292F4;
-	/* background: -webkit-linear-gradient(to right, #195775, #7FB3D5);
-	background: linear-gradient(to right, #195775, #7FB3D5); */
+	background: #34A5AB;
+	/* background: -webkit-linear-gradient(to right, #2292F4, #34A5AB);
+	background: linear-gradient( to right, #2292F4, #34A5AB); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
