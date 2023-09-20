@@ -18,16 +18,16 @@ const Sidebar = () => {
           <Link  to="/dashpat" className={`rounded-2xl w-auto py-2 px-2 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dashpat' ? 'bg-[#6DFFD680]' : ''}`}>
             <div className="flex justify-center items-center"><img src={logow} alt="bcare" className="w-auto h-10 select-none" /></div>
           </Link>
-          <Link to="/dashpat/notifications" className={`rounded-2xl w-auto py-4 px-4 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dashpat/notifications' ? 'bg-[#6DFFD680]' : ''} pointer-events-none`}>
+          <Link to="/dashpat/notifications" className={`pointer-events-none rounded-2xl w-auto py-4 px-4 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dashpat/notifications' ? 'bg-[#6DFFD680]' : ''} pointer-events-none`}>
             <div className="flex justify-center items-center"><IoNotificationsOutline size={24}/></div>
           </Link>
-          <Link to="/dashpat/list" className={`rounded-2xl w-auto py-4 px-4 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dashpat/list' ? 'bg-[#6DFFD680]' : ''} pointer-events-none`}>
+          <Link to="/dashpat/list" className={`pointer-events-none rounded-2xl w-auto py-4 px-4 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dashpat/list' ? 'bg-[#6DFFD680]' : ''} pointer-events-none`}>
             <div className="flex justify-center items-center"><IoPeopleOutline size={24}/></div>
           </Link>
-          <Link to="/dashpat/calendar" className={`rounded-2xl w-auto py-4 px-4 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dashpat/calendar' ? 'bg-[#6DFFD680]' : ''} pointer-events-none`}>
+          <Link to="/dashpat/calendar" className={`pointer-events-none rounded-2xl w-auto py-4 px-4 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dashpat/calendar' ? 'bg-[#6DFFD680]' : ''} pointer-events-none`}>
             <div className="flex justify-center items-center"><IoCalendarOutline size={24}/></div>
           </Link>
-          <Link to="/dashpat/settings" className={`rounded-2xl w-auto py-4 px-4 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dashpat/settings' ? 'bg-[#6DFFD680]' : ''} pointer-events-none`}>
+          <Link to="/dashpat/settings" className={`pointer-events-none rounded-2xl w-auto py-4 px-4 mb-2 hover:bg-[#6DFFD61A] ${pathname === '/dashpat/settings' ? 'bg-[#6DFFD680]' : ''} pointer-events-none`}>
             <div className="flex justify-center items-center"><IoSettingsOutline size={24}/></div>
           </Link>
         </div>

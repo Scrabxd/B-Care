@@ -37,9 +37,6 @@ const Login = () => {
         <div className='circle'></div>
         <div className='circle'></div>
         <div className='circle'></div>
-        {/* <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div> */}
       </div>
       <div className={`container ${isSignUpActive ? 'right-panel-active' : ''}`}>
         <div className="form-container sign-up-container">

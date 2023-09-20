@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import { StatisticsChart1 } from './statisticsBars';
 import AssetTest from '../../assets/images/zencon.jpg'
+import AssetOld from '../../assets/images/assetOldMan.png'
 import SvgDoctors from './svgDoctors'
 import Table from './table';
 import Modal from 'react-modal';
@@ -91,7 +92,7 @@ const MainDash = () => {
                                                 <div className='grid grid-cols-3 items-center justify-around w-full h-2/3'>
                                                     {/* <div className='h-full w-1/3'></div> */}
                                                     <div className='col-span-1 flex justify-center'>
-                                                        <img src={AssetTest} alt="profile" className='col-span-1 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full object-cover' />
+                                                        <img src={AssetOld} alt="profile" className='col-span-1 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full object-cover' />
 
                                                     </div>
                                                     <div className='col-span-2 flex flex-col w-full items-center px-2'>
